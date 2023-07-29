@@ -107,7 +107,7 @@ var printer2 = PairedPrinter(name, address)
 Printooth.printer(printer1).print(printables)  
 Printooth.printer(printer2).print(printables)
 ```
-### If you have a printer with deferent commands
+### If you have a printer with different commands
 
 Create a class from type `Printer` and override the initializers method, then return your printer commands from the printers command sheet ( You can find it on the Internet ), let's take an example:
  ```kotlin
@@ -132,7 +132,7 @@ Create a class from type `Printer` and override the initializers method, then re
     override fun initPrintingImagesHelper(): PrintingImagesHelper = DefaultPrintingImagesHelper()
 }
 ```
-If you have issues with printing images, you can implement the process of transfaring image from bitmap to ByteArray manually by extends PrintingImagesHelper class and implement getBitmapAsByteArray, then you shold return an object from your helper to initPrintingImagesHelper() as this example:
+If you have issues with printing images, you can implement the process of transferring the image from bitmap to ByteArray manually by extending PrintingImagesHelper class and implementing getBitmapAsByteArray, and then you should return an object from your helper to initPrintingImagesHelper() as this example:
 ```kotlin
 class MyPrintingImagesHelper : PrintingImagesHelper {  
     override fun getBitmapAsByteArray(bitmap: Bitmap): ByteArray {  
