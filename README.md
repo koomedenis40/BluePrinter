@@ -31,7 +31,7 @@ Should be initialized once in `Application.onCreate()`:
 Printooth.init(context);
 ```
 ### Scan and pair printer
-Printooth is providing a scanning activity to make pairing process easy. Just start `ScanningActivity` and you will skip the process of pairing and saving printer.
+Printooth is providing a scanning activity to make the pairing process easy. Just start `ScanningActivity`, and you will skip the process of pairing and saving the printer.
 ```kotlin
 startActivityForResult(Intent(this, ScanningActivity::class.java), ScanningActivity.SCANNING_FOR_PRINTER)
 ```
@@ -47,7 +47,7 @@ If you want to make your own user interface, you can pass your paired printer to
 ```kotlin
 Printooth.setPrinter(printerName, printerAddress)
 ```
-Check if Printooth has saved printer:
+Check if Printooth has saved the printer:
 ```kotlin
 Printooth.hasPairedPrinter()
 ```
