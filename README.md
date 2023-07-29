@@ -81,7 +81,7 @@ var printable = TextPrintable.Builder()
         .setUnderlined(DefaultPrinter.UNDELINED_MODE_ON) // Underline on/off
         .setCharacterCode(DefaultPrinter.CHARACTER_CODE_USA_CP437) // Character code to support languages
         .setLineSpacing(DefaultPrinter.LINE_SPACING_60)
-        .setNewLinesAfter(1) // To provide n lines after sentence
+        .setNewLinesAfter(1) // To provide n lines after the sentence
         .build()
 printables.add(printable)
 Printooth.printer().print(printables)
@@ -100,7 +100,7 @@ Printooth.printer().printingCallback = object : PrintingCallback {
     override fun onMessage(message: String) { }  
 }
 ```
-### Use more than printer in the same time:
+### Use more than one printer at the same time:
 ```kotlin
 var printer1 = PairedPrinter(name, address)  
 var printer2 = PairedPrinter(name, address)  
